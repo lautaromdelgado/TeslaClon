@@ -24,44 +24,80 @@ header{
   margin-left: 20px;
 }
 
-.barra-busqueda{
+.barra-busqueda {
   display: flex;
   align-items: center;
-  width: 40%;
+  width: 550px;
   height: 40px;
-  border: 1px solid #ccc;
-  border-radius: 24px;
-  overflow: hidden;
   margin-left: 30vh;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-.barra-busqueda input{
+.barra-busqueda input {
   flex: 1;
   border: none;
-  padding: 0 10px;
+  padding: 0 15px;
   font-size: 16px;
+  outline: none;
 }
 
 .barra-busqueda button {
-  background-color: #f8f8f8;
-  padding-right: 15px;
+  background-color: #f0f0f0;
+  height: 10vh;
+  width: 4.5vw;
   border: none;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.barra-busqueda button img{
+  width: 4vh;
+}
+
+.mic-icono{
+  margin-left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   font-size: 20px;
+  color: #000000;
+  background-color:  #f0f0f0;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.notificacion{
+  margin-left: 240px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.barra-busqueda button i {
-  color: #606060;
-  font-size: 20px;
-  border: none;
+.notificacion img{
+  width: 30px;
 }
 
-.mic-icono{
-  margin-left: 10px;
-  cursor: pointer;
-  font-size: 20px;
-  color: #606060;
+.perfil img{
+  border-radius: 50%;
+  width: 35px;
+  margin-left: 25px;
+}
+
+.notificacion:hover{
+  background-color:  #f0f0f0;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.mic-icono:hover{
+  background-color: #d1d1d1;
 }
