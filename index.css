@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
+  font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -7,8 +10,9 @@
 header{
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 10px;
+  width: 100vw;
 }
 
 .menu-icono{
@@ -64,4 +68,29 @@ header{
   cursor: pointer;
   font-size: 20px;
   color: #606060;
+}
+
+.filtros{
+  padding: 10px;
+  display: flex;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+ul{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+li button{
+  padding: 10px 10px;
+  background-color: rgb(242,242,242);
+  border-style: none;
+  border-radius: 5px;
 }
