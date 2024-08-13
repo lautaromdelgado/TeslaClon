@@ -8,11 +8,13 @@
 }
 
 header{
+  position: relative;
   display: flex;
   align-items: center;
   background-color: rgb(255, 255, 255);
   padding: 10px;
   width: 100vw;
+  z-index: 5;
 }
 
 .menu-icono{
@@ -124,9 +126,53 @@ ul{
   list-style: none;
 }
 
-li button{
-  padding: 10px 10px;
+nav li button{
+  padding: 5px 15px;
   background-color: rgb(242,242,242);
   border-style: none;
-  border-radius: 5px;
+  border-radius: 8px;
+}
+
+aside{
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  position: fixed; 
+  left: 0;
+  top: 60px; 
+  height: calc(100vh - 60px);
+  width: 235px; 
+  z-index: 1;
+}
+
+aside ul li{
+  width: 100%;
+}
+
+aside ul{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  list-style: none;
+  width: 235px;
+  
+}
+aside li button{
+  display: flex;
+  border-style: none;
+  padding: 5px;
+  width: 200px;
+  align-items: center;
+  border-radius: 9px;
+  height: 42px;
+}
+
+aside li img{
+  display: flex;
+  height: 30px;
+  align-items: center;
+  margin-right: 20px;
+
 }
