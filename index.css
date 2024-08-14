@@ -95,7 +95,8 @@ header{
 .perfil img{
   border-radius: 50%;
   width: 35px;
-  margin-left: 25px;
+  margin-left: 30px;
+  margin-right: 40px;
 }
 
 .notificacion:hover{
@@ -189,4 +190,125 @@ aside li img {
   display: flex;
   flex-wrap: wrap;
   height: 40px;
+}
+
+/*Avatar/Perfil con sus opciones*/
+#avatar{
+  cursor: pointer;
+}
+#dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #211616;
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  min-width: 200px;
+}
+
+#dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#dropdown-menu li {
+  padding: 9px 18px;
+}
+
+#dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 2px;
+}
+
+#dropdown-menu li a:hover {
+  background-color: #a1a1a1;
+  border-radius: 4px;
+}
+
+#perfil-options{
+  margin-left: -30px;
+}
+
+/*icono de sign out*/
+.material-icons-outlined {
+  font-size: 24px; 
+  color: #333; 
+  vertical-align: middle;
+  margin-right: 8px; 
+}
+
+a {
+  text-decoration: none; 
+  color: inherit;
+}
+
+.material-symbols-outlined{
+  font-size: 24px; 
+  color: #333; 
+  vertical-align: middle;
+  margin-right: 8px; 
+}
+
+
+/*Config de aside, ocular/mostrar*/
+#sidebar {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #f9f9f9;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.menu-icono {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.menu-icono img {
+  width: 25px; 
+  height: auto;
+}
+
+aside ul {
+  margin-top: 100px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside li {
+  margin-bottom: 10px;
+}
+
+aside button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+aside button img {
+  width: 24px;
+  height: auto;
+  margin-right: 10px;
+}
+
+aside button:hover {
+  background-color: #eee;
+  border-radius: 4px;
 }

@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="img/icono-premium.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +25,7 @@
 <body>
   <header>
     <div class="menu-icono">
-      <img src="img/icono-nav-bar.png" alt="">
+      <img src="img/icono-nav-bar.png" alt="Menu Icon" id="menu-icon">
     </div>
 
     <div class="logo">
@@ -42,7 +46,27 @@
     </div>
 
     <div class="perfil">
-      <img src="img/canal4.jpeg" alt="">
+      <img src="img/canal4.jpeg" alt="Avatar" id="avatar">
+      <div id="dropdown-menu" class="dropdown-menu">
+        <ul>
+          <li id="perfil-options"> 
+            <img src="img/canal4.jpeg"> 
+          </li>
+          <li><a href="#">Google account</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">switch_account</span>Switch account</a></li>
+            <li><a href="#"><span class="material-icons-outlined">login</span>Sign out</a></li>
+            <li><a href="#">Youtube Studio</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">paid</span>Purchases and memberships</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">mode_night</span>Appearance:Device theme</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">translate</span>Language:English</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">admin_panel_settings</span>Restricted Mode: off</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">language</span>Location: Argentina</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">keyboard</span>Keyboard shorcuts</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">settings</span>Settings</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">help</span>Help</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">chat_info</span>Send feedback</a></li>
+        </ul>
+    </div>
     </div>
   </header>
 
@@ -57,7 +81,7 @@
       </ul>
   </nav>
 
-  <aside>
+  <aside id="sidebar">
       <ul>
         <li><button><img src="" alt="">Home</button></li>
         <li><button><img src="" alt="">Shorts</button></li>
