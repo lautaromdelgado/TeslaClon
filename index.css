@@ -132,8 +132,11 @@ nav ul{
   list-style: none;
 }
 
-nav li button{
-  padding: 5px 15px;
+li button{
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  height: 33px;
   background-color: rgb(242,242,242);
   border-style: none;
   border-radius: 8px;
@@ -422,3 +425,4 @@ body {
   font-size: 12px;
   color: #888;
 }
+
