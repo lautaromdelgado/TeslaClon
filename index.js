@@ -15,16 +15,19 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
 //accion al aside, (mostrar/ocultar)
 document.addEventListener('DOMContentLoaded', function() {
     var menuIcon = document.getElementById('menu-icon');
     var sidebar = document.getElementById('sidebar');
 
+    sidebar.style.display = 'block';
+
     menuIcon.addEventListener('click', function() {
-        if (sidebar.style.display === 'none' || sidebar.style.display === '') {
-            sidebar.style.display = 'block';
-        } else {
+        if (sidebar.style.display === 'block' || sidebar.style.display === '') {
             sidebar.style.display = 'none';
+        } else {
+            sidebar.style.display = 'block';
         }
     });
 

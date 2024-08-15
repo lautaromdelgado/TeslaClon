@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  position: relative ;
 }
 
 header{
@@ -20,7 +21,7 @@ header{
 
 .menu-icono{
   cursor: pointer;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 .menu-icono img{
   width: 20px;
@@ -138,8 +139,7 @@ nav li button{
 aside {
   display: flex;
   background-color: rgb(255, 255, 255);
-  padding: 0; 
-  position: fixed; 
+  padding: 11px; 
   flex-direction: column;
   left: 0;
   top: 60px; 
@@ -149,7 +149,7 @@ aside {
 }
 
 aside ul {
-  padding: 10px;
+  padding: 0;
   flex-direction: column;
   margin: 0;
   list-style: none;
@@ -167,7 +167,7 @@ aside li button {
   display: flex;
   align-items: center;
   width: 100%; 
-  padding: 9px 10px;
+  padding: 8px 10px;
   border: none;
   background-color: transparent;
   text-align: left;
@@ -255,23 +255,6 @@ a {
   margin-right: 8px; 
 }
 
-
-/*Config de aside, ocular/mostrar*/
-#sidebar {
-  display: none; 
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 250px;
-  height: 100%;
-  background-color: #f9f9f9;
-  border-right: 1px solid #ccc;
-  padding: 20px;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-  z-index: 1000;
-  overflow-y: auto;
-}
-
 .menu-icono {
   cursor: pointer;
   display: inline-block;
@@ -283,14 +266,12 @@ a {
 }
 
 aside ul {
-  margin-top: 100px;
+  margin: 100px;
   list-style: none;
-  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin: 0;
-}
-
-aside li {
-  margin-bottom: 10px;
+  border-top: 1px solid #868686;
 }
 
 aside button {
@@ -312,3 +293,61 @@ aside button:hover {
   background-color: #eee;
   border-radius: 4px;
 }
+
+.suscriptions{
+  display: flex;
+  align-items: center;
+  width: 100%; 
+  padding: 8px 10px;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#explore{
+  display: flex;
+  align-items: center;
+  width: 100%; 
+  padding: 8px 10px;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  border-radius: 8px;
+
+}
+
+#suscriptions{
+  display: flex;
+  align-items: center;
+  width: 100%; 
+  padding: 8px 10px;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  border-radius: 8px;
+}
+
+#more{
+  display: flex;
+  align-items: center;
+  width: 100%; 
+  padding: 8px 10px;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  border-radius: 8px;
+}
+
+.copyright {
+  display: flex;
+  padding: 40px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  font-size: 5px;
+  color: #333;
+  border-top: 1px solid #868686;
+}
+
