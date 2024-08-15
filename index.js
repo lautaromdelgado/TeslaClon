@@ -37,3 +37,51 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+const videos = [
+    {
+        thumbnail: 'img/img-video9.webp',
+        title: 'Video Title 1',
+        channel: 'Channel Name 1',
+        views: '1M views'
+    },
+    {
+        thumbnail: 'img/img-video4.webp',
+        title: 'Video Title 2',
+        channel: 'Channel Name 2',
+        views: '500K views'
+    },
+    {
+        thumbnail: 'img/img-video9.webp',
+        title: 'Video Title 3',
+        channel: 'Channel Name 3',
+        views: '250K views'
+    },
+    {
+        thumbnail: 'img/img-video8.webp',
+        title: 'Video Title 4',
+        channel: 'Channel Name 4',
+        views: '100K views'
+    }
+];
+
+const videoContainer = document.getElementById('video-container');
+
+videos.forEach(video => {
+    const videoCard = document.createElement('div');
+    videoCard.className = 'video-card';
+    
+    videoCard.innerHTML = `
+        <div class="video-thumbnail">
+            <img src="${video.thumbnail}" alt="${video.title}">
+        </div>
+        <div class="video-info">
+            <div class="video-title">${video.title}</div>
+            <div class="video-channel">${video.channel}</div>
+            <div class="video-views">${video.views}</div>
+        </div>
+    `;
+    
+    videoContainer.appendChild(videoCard);
+});
