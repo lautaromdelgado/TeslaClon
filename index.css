@@ -6,10 +6,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  position: relative ;
+  position: relative;
 }
 
-header{
+header {
   position: fixed;
   display: flex;
   align-items: center;
@@ -22,15 +22,16 @@ header{
   z-index: 1000;
 }
 
-.menu-icono{
+.menu-icono {
   cursor: pointer;
   margin-left: 20px;
 }
-.menu-icono img{
+
+.menu-icono img {
   width: 20px;
 }
 
-.logo img{
+.logo img {
   width: 90px;
   margin-left: 20px;
 }
@@ -66,11 +67,11 @@ header{
   cursor: pointer;
 }
 
-.barra-busqueda button img{
+.barra-busqueda button img {
   width: 4vh;
 }
 
-.mic-icono{
+.mic-icono {
   margin-left: 25px;
   display: flex;
   justify-content: center;
@@ -78,13 +79,13 @@ header{
   cursor: pointer;
   font-size: 20px;
   color: #000000;
-  background-color:  #f0f0f0;
+  background-color: #f0f0f0;
   border-radius: 100%;
   width: 40px;
   height: 40px;
 }
 
-.notificacion{
+.notificacion {
   margin-left: 240px;
   cursor: pointer;
   display: flex;
@@ -92,52 +93,52 @@ header{
   justify-content: center;
 }
 
-.notificacion img{
+.notificacion img {
   width: 30px;
 }
 
-.perfil img{
+.perfil img {
   border-radius: 50%;
   width: 35px;
   margin-left: 30px;
   margin-right: 40px;
 }
 
-.notificacion:hover{
-  background-color:  #f0f0f0;
+.notificacion:hover {
+  background-color: #f0f0f0;
   border-radius: 100%;
   width: 40px;
   height: 40px;
 }
 
-.mic-icono:hover{
+.mic-icono:hover {
   background-color: #d1d1d1;
 }
 
-.filtros{
+.filtros {
   padding: 10px;
   display: flex;
 }
 
-nav{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
 }
 
-nav ul{
+nav ul {
   display: flex;
   gap: 20px;
   list-style: none;
 }
 
-li button{
+li button {
   padding: 10px 10px;
   display: flex;
   align-items: center;
   height: 33px;
-  background-color: rgb(242,242,242);
+  background-color: rgb(242, 242, 242);
   border-style: none;
   border-radius: 8px;
 }
@@ -145,12 +146,12 @@ li button{
 aside {
   display: flex;
   background-color: rgb(255, 255, 255);
-  padding: 11px; 
+  padding: 11px;
   flex-direction: column;
   left: 0;
-  top: 60px; 
+  top: 60px;
   height: calc(100vh - 60px);
-  width: 225px; 
+  width: 225px;
   z-index: 1;
 }
 
@@ -159,7 +160,7 @@ aside ul {
   flex-direction: column;
   margin: 0;
   list-style: none;
-  width: 100%; 
+  width: 100%;
   height: max-content;
 }
 
@@ -172,7 +173,7 @@ aside ul li {
 aside li button {
   display: flex;
   align-items: center;
-  width: 100%; 
+  width: 100%;
   padding: 8px 10px;
   border: none;
   background-color: transparent;
@@ -190,8 +191,8 @@ aside li img {
   height: 20px;
 }
 
-#you{
-  padding-left: 10px ;
+#you {
+  padding-left: 10px;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -199,9 +200,10 @@ aside li img {
 }
 
 /*Avatar/Perfil con sus opciones*/
-#avatar{
+#avatar {
   cursor: pointer;
 }
+
 #dropdown-menu {
   display: none;
   position: absolute;
@@ -210,7 +212,7 @@ aside li img {
   background-color: #fff;
   border: 1px solid #211616;
   border-radius: 4px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   min-width: 200px;
 }
@@ -237,28 +239,28 @@ aside li img {
   border-radius: 4px;
 }
 
-#perfil-options{
+#perfil-options {
   margin-left: -30px;
 }
 
 /*icono de sign out*/
 .material-icons-outlined {
-  font-size: 24px; 
-  color: #333; 
+  font-size: 24px;
+  color: #333;
   vertical-align: middle;
-  margin-right: 8px; 
+  margin-right: 8px;
 }
 
 a {
-  text-decoration: none; 
+  text-decoration: none;
   color: inherit;
 }
 
-.material-symbols-outlined{
-  font-size: 24px; 
-  color: #333; 
+.material-symbols-outlined {
+  font-size: 24px;
+  color: #333;
   vertical-align: middle;
-  margin-right: 8px; 
+  margin-right: 8px;
 }
 
 .menu-icono {
@@ -267,7 +269,7 @@ a {
 }
 
 .menu-icono img {
-  width: 25px; 
+  width: 25px;
   height: auto;
 }
 
@@ -300,10 +302,10 @@ aside button:hover {
   border-radius: 4px;
 }
 
-.suscriptions{
+.suscriptions {
   display: flex;
   align-items: center;
-  width: 100%; 
+  width: 100%;
   padding: 8px 10px;
   border: none;
   background-color: transparent;
@@ -312,10 +314,10 @@ aside button:hover {
   border-radius: 8px;
 }
 
-#explore{
+#explore {
   display: flex;
   align-items: center;
-  width: 100%; 
+  width: 100%;
   padding: 8px 10px;
   border: none;
   background-color: transparent;
@@ -324,10 +326,10 @@ aside button:hover {
 
 }
 
-#suscriptions{
+#suscriptions {
   display: flex;
   align-items: center;
-  width: 100%; 
+  width: 100%;
   padding: 8px 10px;
   border: none;
   background-color: transparent;
@@ -335,10 +337,10 @@ aside button:hover {
   border-radius: 8px;
 }
 
-#more{
+#more {
   display: flex;
   align-items: center;
-  width: 100%; 
+  width: 100%;
   padding: 8px 10px;
   border: none;
   background-color: transparent;
@@ -383,7 +385,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 80px 20px 20px 260px; 
+  padding: 80px 20px 20px 260px;
   /* width: calc(100% - 260px); */
   margin-left: -450px;
   width: 1200px;
@@ -391,7 +393,7 @@ body {
 }
 
 .video-card {
-  width: calc(33.33% - 20px); 
+  width: calc(33.33% - 20px);
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -426,3 +428,7 @@ body {
   color: #888;
 }
 
+#prueba-gay {
+  color: burlywood;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0);
+}
