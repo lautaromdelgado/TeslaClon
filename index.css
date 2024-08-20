@@ -9,6 +9,10 @@
   position: relative;
 }
 
+body {
+  padding-top: 60px;
+}
+
 header {
   position: fixed;
   display: flex;
@@ -24,7 +28,7 @@ header {
 
 .menu-icono {
   cursor: pointer;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .menu-icono img {
@@ -122,7 +126,6 @@ nav {
   display: flex;
   justify-content: center;
   background-color: rgb(255, 255, 255);
-  padding: 10px;
 }
 
 nav ul {
@@ -135,7 +138,7 @@ li button {
   padding: 10px 10px;
   display: flex;
   align-items: center;
-  height: 33px;
+  height: 38px;
   background-color: rgb(242, 242, 242);
   border-style: none;
   border-radius: 8px;
@@ -181,7 +184,7 @@ aside li button {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 8px 10px;
+  padding: 10px 10px;
   border: none;
   background-color: transparent;
   text-align: left;
@@ -288,7 +291,6 @@ aside ul {
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 0;
-  border-top: 1px solid #868686;
 }
 
 aside button {
@@ -437,3 +439,11 @@ body {
   font-size: 12px;
   color: #888;
 }
+
+ul li button svg {
+  width: 24px;
+  height: 24px;
+  fill: #ff0000; 
+  margin-right: 8px;
+}
+
