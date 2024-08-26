@@ -15,33 +15,58 @@ header {
   background-color: rgb(255, 255, 255);
   
   top: 0;
-  padding: 10px 20px;
+  padding: 0px 16px;
   width: 100%;
   height: 56px;
   justify-content: space-between;
   z-index: 1000;
 }
 
-.menu-icono {
+.logo_e_Icono{
+  display: flex;
+  height: 100%;
+  width: 170px;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu-icon{
+  width: 24px;
+  height: 24px;
+}
+
+#menu-icono {
+  display: flex;
   cursor: pointer;
-  margin-left: 10px;
+  height: 40px;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 0; /* Asegúrate de que no haya padding */
+  transition: left 0.3s ease;
+  box-sizing: border-box;
 }
 
-.menu-icono img {
-  width: 20px;
+.menu-icono:hover {
+  background-color: #f3f3f3;
 }
 
-.logo img {
-  width: 90px;
-  margin-left: 20px;
+.logo{
+  display: flex;
+  width: 128px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
-.barra-busqueda {
+.busqueda {
   display: flex;
   align-items: center;
   width: 550px;
   height: 40px;
-  margin-left: 30vh;
   border: 1px solid #ccc;
   border-radius: 20px;
   overflow: hidden;
@@ -207,7 +232,6 @@ aside ul {
 
 aside ul li {
   width: 100%;
-  margin-left: 5px;
   padding: 0;
 }
 
@@ -541,7 +565,7 @@ ul li button svg {
 main{
   top: 80px;
   left: 70px;
-  width: 80%;
+  width: 100%;
   height: 100vw;
   background-color: rgb(255, 255, 255);
 }
