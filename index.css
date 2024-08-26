@@ -1,19 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-* {
-  font-family: "Roboto", sans-serif;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  position: relative;
-}
-
 body {
   margin: 0;
   padding: 0;
   padding-top: 60px;
-  width: 100vw;
-  flex-wrap: wrap;
+  background-color: white;
 }
 
 header {
@@ -122,48 +113,64 @@ header {
   background-color: #d1d1d1;
 }
 
-.filtros {
-  top: 56px;
-  padding: 10px;
-  display: flex;
-  height: 56px;
-  width: 100%;
-  align-items: center;
-}
-
-
-nav {
+.filters {
+  flex-grow: 1;
+  margin-left: 20px;
   position: fixed;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(255, 255, 255);
-  z-index: 10;
 }
 
-nav ul {
-  margin: 0;
-  display: flex;
+.filters ul {
   list-style: none;
-  height: 100%;
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
 
-nav li{
-  display: flex;
-  align-items: center;
+.filters ul li {
+  margin-right: 20px;
 }
 
-nav li button {
-  padding: 0px 12px;
+.filters ul li a {
+  text-decoration: none;
+  color: #606060;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filters ul li a:hover {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+.asidePrincipal{
+  position: fixed;
+  height: 100vw;
+  width: 70px;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0px 3px;
+  
+}
+
+.asidePrincipal a{
   display: flex;
+  width: 64px;
+  height: 74px;
+  background-color: #ffffff;
+  justify-content: center;
   align-items: center;
-  height: 32px;
-  background-color: rgb(242, 242, 242);
-  border-style: none;
-  border-radius: 8px;
-  font-size: 15px;
-  margin: 12px 12px 12px 0px;
+  border-radius: 12px;
+  flex-direction: column;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 10px;
+  color: #000;
+}
+
+.asidePrincipal a svg{
+  display: flex;
+  margin: 0px 0px 4px;
 }
 
 aside {
@@ -209,17 +216,15 @@ aside li button {
   align-items: center;
   width: 100%;
   padding: 10px 10px;
-  border: none;
   background-color: transparent;
   text-align: left;
   gap: 15px;
-  cursor: pointer;
-  border-radius: 8px;
+  border-radius: 30px;
   font-size: 14px;
 }
 
 aside li button:hover {
-  background-color: #e0e0e0;
+  background-color: #ebebeb;
 }
 
 #you {
@@ -290,7 +295,7 @@ aside li button:hover {
 }
 
 .firstLinks{
-  border-top: solid 1px #000000;
+  border-top: solid 0.4px #cecece;
   margin-top: 12px;
   padding: 16px 12px 0px;
   font: 15px;
@@ -358,8 +363,8 @@ aside button img {
 }
 
 aside button:hover {
-  background-color: #eee;
-  border-radius: 4px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
 }
 
 .suscriptions {
@@ -462,7 +467,9 @@ body {
   /* width: calc(33.333% - 16px); */
   width: 29.5vw;
   background-color: #ffffff;
-  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .video-thumbnail img {
@@ -504,31 +511,39 @@ ul li button svg {
 .you{
   margin-top: 12px;
   padding-top: 12px;
-  border-top: solid 1px #000000;
+  border-top: solid 0.4px #cecece;
 }
 
 .subscriptions{
   margin-top: 12px;
   padding-top: 12px;
-  border-top: solid 1px #000000;
+  border-top: solid 0.4px #cecece;
 }
 
 .explore{
   margin-top: 12px;
   padding-top: 12px;
-  border-top: solid 1px #000000;
+  border-top: solid 0.4px #cecece;
 }
 
 .more{
   margin-top: 12px;
   padding-top: 12px;
-  border-top: solid 1px #000000;
+  border-top: solid 0.4px #cecece;
 }
 
 .settings{
   margin-top: 12px;
   padding-top: 12px;
-  border-top: solid 1px #000000;
+  border-top: solid 0.4px #cecece;
+}
+
+main{
+  top: 80px;
+  left: 70px;
+  width: 80%;
+  height: 100vw;
+  background-color: rgb(255, 255, 255);
 }
 
 

@@ -26,74 +26,91 @@
   <title>YouTube</title>
 </head>
 
-
 <body>
+
   <header>
+  </div>
+  <div class="menu-icono">
+    <svg id="menu-icon" alt="Menu Icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path></svg>
+  </div>
+  
+  <div class="logo">
+    <img src="img/YouTube_logo_(2017).png" alt="">
+  </div>
+  
+  <div class="barra-busqueda">
+    <input type="text" placeholder="Search">
+    <button title="Search"><img src="img/icono-search.png" alt=""> </button>
+  </div>
+  
+  <div class="mic-icono">
+    <i class="fas fa-microphone"> </i>
+  </div>
+  
+  <div class="notificacion">
+    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-2.65V19H4v-1.65l2-1.88v-5.15C6 7.4 7.56 5.1 10 4.34v-.38c0-1.42 1.49-2.5 2.99-1.76.65.32 1.01 1.03 1.01 1.76v.39c2.44.75 4 3.06 4 5.98v5.15l2 1.87zm-1 .42-2-1.88v-5.47c0-2.47-1.19-4.36-3.13-5.1-1.26-.53-2.64-.5-3.84.03C8.15 6.11 7 7.99 7 10.42v5.47l-2 1.88V18h14v-.23z"></path></svg>
+  </div>
+  
+  <div class="perfil">
+    <img src="img/canal4.jpeg" alt="Avatar" id="avatar">
+    <div id="dropdown-menu" class="dropdown-menu">
+      <ul>
+        <li id="perfil-options">
+          <img src="img/canal4.jpeg">
+        </li>
+        <li><a href="#">Google account</a></li>
+        <li><a href="#"><span class="material-symbols-outlined">switch_account</span>Switch account</a></li>
+        <li><a href="#"><span class="material-icons-outlined">login</span>Sign out</a></li>
+        <li><a href="#">Youtube Studio</a></li>
+        <li><a href="#"><span class="material-symbols-outlined">paid</span>Purchases and memberships</a></li>
+        <li><a href="#"><span class="material-symbols-outlined">mode_night</span>Appearance:Device theme</a></li>
+        <li><a href="#"><span class="material-symbols-outlined">translate</span>Language:English</a></li>
+        <li><a href="#"><span class="material-symbols-outlined">admin_panel_settings</span>Restricted Mode: off</a>
+        </li>
+        <li><a href="#"><span class="material-symbols-outlined">language</span>Location: Argentina</a></li>
+        <li><a href="#"><span class="material-symbols-outlined">keyboard</span>Keyboard shorcuts</a></li>
+        <li><a href="#"><span class="material-symbols-outlined">settings</span>Settings</a></li>
+        <li><a href="#"><span class="material-symbols-outlined">help</span>Help</a></li>
+        <li><a href="#"><span class="material-symbols-outlined">chat_info</span>Send feedback</a></li>
+      </ul>
     </div>
-    <div class="menu-icono">
-      <img src="img/icono-nav-bar.png" alt="Menu Icon" id="menu-icon">
-    </div>
-
-    <div class="logo">
-      <img src="img/YouTube_logo_(2017).png" alt="">
-    </div>
-
-    <div class="barra-busqueda">
-      <input type="text" placeholder="Buscar">
-      <button title="Buscar"><img src="img/icono-search.png" alt=""> </button>
-    </div>
-
-    <div class="mic-icono">
-      <i class="fas fa-microphone"> </i>
-    </div>
-
-    <div class="notificacion">
-      <img src="img/icono-alarm.png" alt="">
-    </div>
-
-    <div class="perfil">
-      <img src="img/canal4.jpeg" alt="Avatar" id="avatar">
-      <div id="dropdown-menu" class="dropdown-menu">
-        <ul>
-          <li id="perfil-options">
-            <img src="img/canal4.jpeg">
-          </li>
-          <li><a href="#">Google account</a></li>
-          <li><a href="#"><span class="material-symbols-outlined">switch_account</span>Switch account</a></li>
-          <li><a href="#"><span class="material-icons-outlined">login</span>Sign out</a></li>
-          <li><a href="#">Youtube Studio</a></li>
-          <li><a href="#"><span class="material-symbols-outlined">paid</span>Purchases and memberships</a></li>
-          <li><a href="#"><span class="material-symbols-outlined">mode_night</span>Appearance:Device theme</a></li>
-          <li><a href="#"><span class="material-symbols-outlined">translate</span>Language:English</a></li>
-          <li><a href="#"><span class="material-symbols-outlined">admin_panel_settings</span>Restricted Mode: off</a>
-          </li>
-          <li><a href="#"><span class="material-symbols-outlined">language</span>Location: Argentina</a></li>
-          <li><a href="#"><span class="material-symbols-outlined">keyboard</span>Keyboard shorcuts</a></li>
-          <li><a href="#"><span class="material-symbols-outlined">settings</span>Settings</a></li>
-          <li><a href="#"><span class="material-symbols-outlined">help</span>Help</a></li>
-          <li><a href="#"><span class="material-symbols-outlined">chat_info</span>Send feedback</a></li>
-        </ul>
-      </div>
-    </div>
+  </div>
+  
   </header>
-
-  <nav class="filtros">
-      
+  
+  <nav class="filters">
     <ul>
-      <li><button>All</button> </li>
-      <li><button>Music</button></li>
-      <li><button>URL</button></li>
-      <li><button>Playlist</button></li>
-      <li><button>Program</button></li>
-    
+        <li><a href="#">All</a></li>
+        <li><a href="#">Music</a></li>
+        <li><a href="#">Gaming</a></li>
+        <li><a href="#">Live</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Learning</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Fashion</a></li>
+        <li><a href="#">Programming</a></li>
+        <li><a href="#">League of Legends</a></li>
+        <li><a href="#">Messi</a></li>
+        <li><a href="#">Lel</a></li>
+        <li><a href="#">Clickbait</a></li>
+        <!-- Add more filters as needed -->
     </ul>
-
-</nav>
-
+  </nav>
+  
+  <aside class="asidePrincipal">
+      
+    <a href="" title="Home"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit;"><g><path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path></g></svg>Home</a>
+    <a href="" title="Shorts"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit;"><path d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"></path></svg>Shorts</a>
+    <a href="" title="Subscriptions"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit;"><path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"></path></svg>Subscriptions</a>
+    <a href="" title="YouTube Music"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit;"><path d="M10 9.35 15 12l-5 2.65zM12 7a5 5 0 105 5 5 5 0 00-5-5m0-1a6 6 0 11-6 6 6 6 0 016-6zm0-3a9 9 0 109 9 9 9 0 00-9-9m0-1A10 10 0 112 12 10 10 0 0112 2z"></path></svg>YouTube Mu...</a>
+    <a href="" title="You"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit;"><path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path></svg>You</a>
+    <a href="" title="Downloads"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit;"><path d="M17 18v1H6v-1h11zm-.5-6.6-.7-.7-3.8 3.7V4h-1v10.4l-3.8-3.8-.7.7 5 5 5-4.9z"></path></svg>Downloads</a>
+  </aside>
   <!----------------------- NAV ------------------------->
- 
+  
 
-  <div id="video-container"></div>
+
+  
 
   <!-- ------- ASIDE -------- -->
   <aside id="sidebar">
@@ -231,6 +248,12 @@
 
 
   </aside>
+
+  <main>
+
+    <div id="video-container"></div>
+
+  </main>
   <!-- Vinculación del script -->
   <script src="index.js"></script>
 </body>
