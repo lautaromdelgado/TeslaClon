@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var menuIcon = document.getElementById('menu-icon');
     var sidebar = document.getElementById('sidebar');
 
-    sidebar.style.display = 'block';
+    sidebar.style.display = 'none';
 
     menuIcon.addEventListener('click', function () {
         if (sidebar.style.display === 'block' || sidebar.style.display === '') {
