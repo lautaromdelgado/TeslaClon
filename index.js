@@ -128,3 +128,15 @@ videos.forEach(video => {
 
     videoContainer.appendChild(videoCard);
 });
+
+document.getElementById('menu-icono').addEventListener('click', function() {
+    var sidebar = document.getElementById('sidebar');
+    var content = document.getElementById('content');
+  
+    sidebar.classList.toggle('closed');
+    if (sidebar.classList.contains('closed')) {
+      content.style.marginLeft = '0';
+    } else {
+      content.style.marginLeft = '200px'; /* Mismo valor que el ancho del menú */
+    }
+  });
