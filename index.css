@@ -253,6 +253,9 @@ header {
   color: #000;
 }
 
+.container-responsive{
+  display: none;
+}
 .asidePrincipal a svg{
   display: flex;
   margin: 0px 0px 4px;
@@ -668,44 +671,68 @@ main{
 
 
  @media only screen and (max-width:900px){
-  *{
-    margin: 0;
-    padding: 0;
-  }
-
-  header{
+  header {
+    position: fixed;
     display: flex;
-    width: 30vw;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    
+    top: 0;
+    padding: 0px 16px;
+    width: 100%;
+    height: 56px;
+    justify-content: space-between;
+    z-index: 1000;
   }
-  .logo img {
-    width: 20vw;
-    margin: 0;
+  
+  .leftContainer{
+    display: flex;
+    height: 100%;
+    width: 170px;
+    align-items: center;
+    justify-content: center;
   }
-  .mic-icono {
+  
+  #menu-icon{
+    width: 24px;
+    height: 24px;
+  }
+  
+  #menu-icono {
     display: none;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 0; /* Asegúrate de que no haya padding */
+    transition: left 0.3s ease;
+    box-sizing: border-box;
   }
-  .notificacion{
-    display: none;
+  
+  #menu-icono:hover {
+    background-color: #ebebeb;
   }
-
-  .menu-icono{
-    display: none;
+  
+  .logo{
+    display: flex;
+    width: 100px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
   }
-
-  .perfil{
-    width: 5vw;
+  
+  .midContainer{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
   }
-
-
-  .asidePrincipal{
-    display: none;
-  }
-
-  main{
-  display: flex;
-  justify-content: center;
-  }
-
+  
   .container-responsive{
     display: flex;
     position: fixed;
@@ -726,5 +753,164 @@ main{
     align-items: center;
     text-decoration: none;
     color: #000;
+  }
+
+  .busqueda {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    margin: 0px 0px 0px 32px;
+    padding: 0px 4px 0px 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0px 0px 20px;
+    overflow: hidden;
+  }
+  
+  .barra-busqueda{
+    display: flex;
+    width: 200px;
+    height: 40px;
+    padding: 0px 4px;
+    margin: 0px 0px 0px 0px;
+  }
+  .barra-busqueda input {
+    flex: 1;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    width: 515px;
+    height: 26px;
+  }
+  
+  .searchIcon button {
+    background-color: #f0f0f0;
+    height: 100%;
+    border: none;
+    padding: 1px 6px;
+    display: flex;
+    width: 64px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 0px 20px 20px 0px;
+  }
+  
+  
+  .mic-icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000000;
+    background-color: #f0f0f0;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  
+  .searchIcon{
+    display: flex;
+    width: 64px;
+    height: 40px;
+  }
+  
+  .rightContainer{
+    display: flex;
+    width: 100px;
+    height: 40px;
+    justify-content: end;
+    align-items: center;
+  }
+  
+  .crear{
+    cursor: pointer;
+    display: none;
+  }
+  
+  .notificacion {
+    cursor: pointer;
+    display: none;
+  }
+  
+  .perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 34px;
+    padding: 1px 6px;
+  }
+  
+  .perfil img {
+    border-radius: 50%;
+    width: 32px;
+    margin-left: 20px;
+  }
+  .mic-icono{
+    display: none;
+  }
+
+  .asidePrincipal{
+    display: none;
+  }
+  #video-container {
+    position: relative;
+    top: 56px;
+    left: 70px;
+    gap: 20px;
+    z-index: 1;
+    /* padding: 24px 24px 0px; */
+    display: inline-block;
+    /* flex-wrap: wrap; */
+    /* justify-content: flex-start; */
+
+    flex-direction: column;
+    width: 100%; /* Evita que el video-container exceda el ancho del main */
+    height: 100%; /* Evita que el video-container exceda la altura del main */
+    background-color: #ffffff; /* Color de fondo opcional */
+    overflow-x: hidden; /* Asegúrate de que ningún contenido desborde horizontalmente */
+  }
+
+  .video-card {
+    /* width: calc(33.333% - 16px); */
+    width: 95vw;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .video-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .video-info {
+    padding: 10px;
+    display: flex;
+  }
+  
+  .video-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .video-image{
+    height: 100%;
+    width: 36px;
+  }
+  
+  .video-image img{
+    width: 100%;
+    height: 100%;
+    margin: 2px;
   }
  }
