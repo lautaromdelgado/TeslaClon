@@ -42,54 +42,63 @@ document.addEventListener('DOMContentLoaded', function () {
 const videos = [
     {
         thumbnail: 'img/img-video9.webp',
+        image: 'img/canal1.jpeg',
         title: 'APRENDE A PROGRAMAR EN 10MIN',
         channel: 'Channel Name 1',
         views: '1M views'
     },
     {
         thumbnail: 'img/img-video4.webp',
+        image: 'img/canal2.jpeg',
         title: 'Video Title 2',
         channel: 'Channel Name 2',
         views: '500K views'
     },
     {
         thumbnail: 'img/img-video9.webp',
+        image: 'img/canal3.jpeg',
         title: 'Video Title 3',
         channel: 'Channel Name 3',
         views: '250K views'
     },
     {
         thumbnail: 'img/img-video8.webp',
+        image: 'img/canal4.jpeg',
         title: 'Video Title 4',
         channel: 'Channel Name 4',
         views: '100K views'
     },
     {
         thumbnail: 'img/img-video8.webp',
+        image: 'img/canal5.jpeg',
         title: 'Video Title 4',
         channel: 'Channel Name 4',
         views: '100K views'
     },
     {
         thumbnail: 'img/img-video8.webp',
+        image: 'img/canal6.jpeg',
         title: 'Video Title 4',
         channel: 'Channel Name 4',
         views: '100K views'
     },
     {
         thumbnail: 'img/img-video8.webp',
+        image: 'img/IconoPersona.jpeg',
         title: 'Video Title 4',
         channel: 'Channel Name 4',
         views: '100K views'
     },
     {
         thumbnail: 'img/img-video8.webp',
+        image: 'img/canal1.jpeg',
         title: 'Video Title 4',
         channel: 'Channel Name 4',
         views: '100K views'
     },
     {
         thumbnail: 'img/img-video8.webp',
+        image: 'img/canal1.jpeg',
         title: 'Video Title 4',
         channel: 'Channel Name 4',
         views: '100K views'
@@ -107,9 +116,13 @@ videos.forEach(video => {
             <img src="${video.thumbnail}" alt="${video.title}">
         </div>
         <div class="video-info">
-            <div class="video-title">${video.title}</div>
-            <div class="video-channel">${video.channel}</div>
-            <div class="video-views">${video.views}</div>
+            <div class="video-image">${video.image}</div>
+            
+            <div class="texto-video">
+                <div class="video-title">${video.title}</div>
+                <div class="video-channel">${video.channel}</div>
+                <div class="video-views">${video.views}</div>
+            </div>
         </div>
     `;
 
