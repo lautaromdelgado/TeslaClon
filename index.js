@@ -129,14 +129,14 @@ videos.forEach(video => {
     videoContainer.appendChild(videoCard);
 });
 
-document.getElementById('menu-icono').addEventListener('click', function() {
+  document.getElementById('menu-icon').addEventListener('click', function() {
     var sidebar = document.getElementById('sidebar');
-    var content = document.getElementById('content');
-  
-    sidebar.classList.toggle('closed');
-    if (sidebar.classList.contains('closed')) {
-      content.style.marginLeft = '0';
-    } else {
-      content.style.marginLeft = '200px'; /* Mismo valor que el ancho del menú */
-    }
-  });
+    var navegate = document.querySelector('.containerFilters');
+    var videos = document.querySelector('.video-card');
+    var videoContainer = document.getElementById('video-container');
+    
+    sidebar.classList.toggle('open');
+    videoContainer.classList.toggle('shrink');
+    videos.classList.toggle('shrink');
+    navegate.classList.toggle('shrink');
+});
