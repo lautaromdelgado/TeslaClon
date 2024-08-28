@@ -22,7 +22,7 @@ header {
   z-index: 1000;
 }
 
-.rightContainer{
+.leftContainer{
   display: flex;
   height: 100%;
   width: 170px;
@@ -71,12 +71,12 @@ header {
 .busqueda {
   display: flex;
   align-items: center;
-  width: 640px;
+  width: 536px;
   height: 40px;
   margin: 0px 0px 0px 32px;
   padding: 0px 4px 0px 16px;
   border: 1px solid #ccc;
-  border-radius: 20px;
+  border-radius: 20px 0px 0px 20px;
   overflow: hidden;
 }
 
@@ -117,6 +117,15 @@ header {
   width: 40px;
   height: 40px;
 }
+
+.searchIcon{
+  display: flex;
+  width: 64px;
+  height: 40px;
+  background-color: #333;
+}
+
+
 
 .notificacion {
   cursor: pointer;
