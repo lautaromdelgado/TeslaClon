@@ -44,46 +44,46 @@ const videos = [
         thumbnail: 'img/img-video9.webp',
         image: 'img/canal1.jpeg',
         title: 'APRENDE A PROGRAMAR EN 10MIN',
-        channel: 'Channel Name 1',
-        views: '1M views'
+        channel: 'Programador X',
+        views: '2.3M views'
     },
     {
         thumbnail: 'img/img-video4.webp',
         image: 'img/canal2.jpeg',
-        title: 'Video Title 2',
-        channel: 'Channel Name 2',
-        views: '500K views'
+        title: 'Bootcamp intensivo de Java',
+        channel: 'freeCodeCamp.org',
+        views: '1.2M views'
     },
     {
-        thumbnail: 'img/img-video9.webp',
+        thumbnail: 'img/img-video2.webp',
         image: 'img/canal3.jpeg',
-        title: 'Video Title 3',
-        channel: 'Channel Name 3',
-        views: '250K views'
+        title: 'Lo que pasó con el cometa verde',
+        channel: 'CNN en Español',
+        views: '1.4M views'
     },
     {
-        thumbnail: 'img/img-video8.webp',
+        thumbnail: 'img/img-video3.webp',
         image: 'img/canal4.jpeg',
-        title: 'Video Title 4',
-        channel: 'Channel Name 4',
-        views: '100K views'
+        title: 'Airthings Master 2023 | DÍA 5',
+        channel: 'Airthings',
+        views: '92k views'
     },
     {
-        thumbnail: 'img/img-video8.webp',
+        thumbnail: 'img/img-video5.webp',
         image: 'img/canal5.jpeg',
-        title: 'Video Title 4',
-        channel: 'Channel Name 4',
-        views: '100K views'
+        title: 'Machupichu Road to 4K',
+        channel: 'devinsupertramp',
+        views: '9.5M views'
     },
     {
-        thumbnail: 'img/img-video8.webp',
+        thumbnail: 'img/img-video6.webp',
         image: 'img/canal6.jpeg',
         title: 'Video Title 4',
         channel: 'Channel Name 4',
         views: '100K views'
     },
     {
-        thumbnail: 'img/img-video8.webp',
+        thumbnail: 'img/img-video7.webp',
         image: 'img/IconoPersona.jpeg',
         title: 'Video Title 4',
         channel: 'Channel Name 4',
@@ -97,7 +97,7 @@ const videos = [
         views: '100K views'
     },
     {
-        thumbnail: 'img/img-video8.webp',
+        thumbnail: 'img/image-fill1.webp',
         image: 'img/canal1.jpeg',
         title: 'Video Title 4',
         channel: 'Channel Name 4',
@@ -129,12 +129,12 @@ videos.forEach(video => {
     videoContainer.appendChild(videoCard);
 });
 
-  document.getElementById('menu-icon').addEventListener('click', function() {
+document.getElementById('menu-icon').addEventListener('click', function () {
     var sidebar = document.getElementById('sidebar');
     var navegate = document.querySelector('.containerFilters');
     var videos = document.querySelector('.video-card');
     var videoContainer = document.getElementById('video-container');
-    
+
     sidebar.classList.toggle('open');
     videoContainer.classList.toggle('shrink');
     videos.classList.toggle('shrink');
