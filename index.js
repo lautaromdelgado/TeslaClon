@@ -115,9 +115,7 @@ videos.forEach(video => {
         <div class="video-thumbnail">
             <img src="${video.thumbnail}" alt="${video.title}">
         </div>
-        <div class="video-info">
-            <div class="video-image">${video.image}</div>
-            
+        <div class="video-info">    
             <div class="texto-video">
                 <div class="video-title">${video.title}</div>
                 <div class="video-channel">${video.channel}</div>
