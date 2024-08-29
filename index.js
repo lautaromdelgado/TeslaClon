@@ -78,30 +78,30 @@ const videos = [
     {
         thumbnail: 'img/img-video6.webp',
         image: 'img/canal6.jpeg',
-        title: 'Video Title 4',
-        channel: 'Channel Name 4',
-        views: '100K views'
+        title: 'Frapuccino (Café Frappé) - Fácil 2024',
+        channel: 'LA COCINA DE LILA',
+        views: '293k views'
     },
     {
         thumbnail: 'img/img-video7.webp',
         image: 'img/IconoPersona.jpeg',
-        title: 'Video Title 4',
-        channel: 'Channel Name 4',
-        views: '100K views'
+        title: 'Todo lo que no viste en el detrás de escenas',
+        channel: 'Canal23 en Español',
+        views: '104K views'
     },
     {
         thumbnail: 'img/img-video8.webp',
         image: 'img/canal1.jpeg',
-        title: 'Video Title 4',
-        channel: 'Channel Name 4',
-        views: '100K views'
+        title: 'GANA el 99% de tus PARTIDAS con estas KEYS',
+        channel: 'Chess Teacher',
+        views: '239K views'
     },
     {
         thumbnail: 'img/image-fill1.webp',
         image: 'img/canal1.jpeg',
-        title: 'Video Title 4',
-        channel: 'Channel Name 4',
-        views: '100K views'
+        title: 'Chat GPT vs Google Bard, La Guerra de las IA (Google vs Microsoft)',
+        channel: 'Fazt',
+        views: '41K views'
     }
 ];
 
