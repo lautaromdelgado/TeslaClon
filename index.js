@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
 const videos = [
     {
         thumbnail: 'img/img-video9.webp',
+        gif: 'img/3D gif dubstep.mp4',
         perfil: 'img/canal1.jpeg',
         title: 'APRENDE A PROGRAMAR EN 10MIN',
         channel: 'Programador X',
@@ -115,6 +116,7 @@ videos.forEach(video => {
     videoCard.innerHTML = `
         <div class="video-thumbnail">
             <img src="${video.thumbnail}" alt="${video.title}">
+            <video src="${video.gif}" alt="${video.title}" class="gif-image">
         </div>
         <div class="video-info">    
         <img src="${video.perfil}" alt="Descripción de la imagen" class="info-image">

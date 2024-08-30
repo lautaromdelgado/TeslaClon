@@ -300,7 +300,32 @@ aside::-webkit-scrollbar-thumb {
   background: #888; /* Color del "dedo" del scrollbar */
 }
 
+/* efecto gif */
+.video-thumbnail {
+  position: relative;
+  display: inline-block;
+}
 
+.thumbnail-image {
+  display: block;
+}
+
+.gif-image {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-thumbnail:hover .gif-image {
+  display: block;
+}
+
+.video-thumbnail:hover .thumbnail-image {
+  display: none;
+}
 aside ul {
   padding: 0;
   flex-direction: column;
