@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
 const videos = [
     {
         thumbnail: 'img/img-video9.webp',
-        gif: 'img/3D gif dubstep.mp4',
+        gif: 'img/matrix_papa.mp4',
         perfil: 'img/canal1.jpeg',
         title: 'APRENDE A PROGRAMAR EN 10MIN',
         channel: 'Programador X',
@@ -50,6 +50,7 @@ const videos = [
     },
     {
         thumbnail: 'img/img-video4.webp',
+        gif: 'img/hacking.mp4',
         perfil: 'img/canal2.jpeg',
         image: 'img/canal2.jpeg',
         title: 'Bootcamp intensivo de Java',
@@ -58,6 +59,7 @@ const videos = [
     },
     {
         thumbnail: 'img/img-video2.webp',
+        gif: 'img/3D gif dubstep.mp4',
         perfil: 'img/canal3.jpeg',
         title: 'Lo que pasó con el cometa verde',
         channel: 'CNN en Español',
@@ -142,3 +144,18 @@ document.getElementById('menu-icon').addEventListener('click', function () {
     videos.classList.toggle('shrink');
     navegate.classList.toggle('shrink');
 });
+
+
+document.querySelectorAll('.video-thumbnail').forEach(thumbnail => {
+    const video = thumbnail.querySelector('.gif-image');
+
+    thumbnail.addEventListener('mouseenter', () => {
+        video.currentTime = 0; // Reinicia el video/GIF al inicio
+        video.play(); // Reproduce el video/GIF
+    });
+
+    thumbnail.addEventListener('mouseleave', () => {
+        video.pause(); // Pausa el video/GIF cuando se sale el cursor
+    });
+});
+
