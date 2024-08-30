@@ -42,13 +42,14 @@ document.addEventListener('DOMContentLoaded', function () {
 const videos = [
     {
         thumbnail: 'img/img-video9.webp',
-        image: 'img/canal1.jpeg',
+        perfil: 'img/canal1.jpeg',
         title: 'APRENDE A PROGRAMAR EN 10MIN',
         channel: 'Programador X',
         views: '2.3M views'
     },
     {
         thumbnail: 'img/img-video4.webp',
+        perfil: 'img/canal2.jpeg',
         image: 'img/canal2.jpeg',
         title: 'Bootcamp intensivo de Java',
         channel: 'freeCodeCamp.org',
@@ -56,49 +57,49 @@ const videos = [
     },
     {
         thumbnail: 'img/img-video2.webp',
-        image: 'img/canal3.jpeg',
+        perfil: 'img/canal3.jpeg',
         title: 'Lo que pasó con el cometa verde',
         channel: 'CNN en Español',
         views: '1.4M views'
     },
     {
         thumbnail: 'img/img-video3.webp',
-        image: 'img/canal4.jpeg',
+        perfil: 'img/canal4.jpeg',
         title: 'Airthings Master 2023 | DÍA 5',
         channel: 'Airthings',
         views: '92k views'
     },
     {
         thumbnail: 'img/img-video5.webp',
-        image: 'img/canal5.jpeg',
+        perfil: 'img/canal5.jpeg',
         title: 'Machupichu Road to 4K',
         channel: 'devinsupertramp',
         views: '9.5M views'
     },
     {
         thumbnail: 'img/img-video6.webp',
-        image: 'img/canal6.jpeg',
+        perfil: 'img/canal6.jpeg',
         title: 'Frapuccino (Café Frappé) - Fácil 2024',
         channel: 'LA COCINA DE LILA',
         views: '293k views'
     },
     {
         thumbnail: 'img/img-video7.webp',
-        image: 'img/IconoPersona.jpeg',
+        perfil: 'img/IconoPersona.jpeg',
         title: 'Todo lo que no viste en el detrás de escenas',
         channel: 'Canal23 en Español',
         views: '104K views'
     },
     {
         thumbnail: 'img/img-video8.webp',
-        image: 'img/canal1.jpeg',
+        perfil: 'img/canal1.jpeg',
         title: 'GANA el 99% de tus PARTIDAS con estas KEYS',
         channel: 'Chess Teacher',
         views: '239K views'
     },
     {
         thumbnail: 'img/image-fill1.webp',
-        image: 'img/canal1.jpeg',
+        perfil: 'img/canal1.jpeg',
         title: 'Chat GPT vs Google Bard, La Guerra de las IA (Google vs Microsoft)',
         channel: 'Fazt',
         views: '41K views'
@@ -116,6 +117,7 @@ videos.forEach(video => {
             <img src="${video.thumbnail}" alt="${video.title}">
         </div>
         <div class="video-info">    
+        <img src="${video.perfil}" alt="Descripción de la imagen" class="info-image">
             <div class="texto-video">
                 <div class="video-title">${video.title}</div>
                 <div class="video-channel">${video.channel}</div>

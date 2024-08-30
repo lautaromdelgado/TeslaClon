@@ -648,6 +648,13 @@ body {
 
 }
 
+.info-image{
+  width: 40px;
+  height: 40px;
+  margin: 0 10px ;
+  border-radius: 50px;
+
+}
 
 .video-thumbnail img {
   width: 100%;
@@ -851,12 +858,15 @@ main{
   .container-responsive{
     display: flex;
     position: fixed;
+    z-index: 1001;
+    background-color: #fff;
     bottom: 0;
     justify-content: center;
     align-items: end;
     width: 100%;
     height: 6vh;
     gap: 7px;
+
   }
 
   .container-responsive a{
@@ -897,7 +907,20 @@ main{
     width: 515px;
     height: 26px;
   }
-  
+  main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
   .searchIcon button {
     background-color: #f0f0f0;
     height: 100%;
