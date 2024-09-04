@@ -163,3 +163,11 @@ document.querySelectorAll('.video-thumbnail').forEach(thumbnail => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    var contenedor = document.getElementById("container-responsive");
+    contenedor.style.position = 'fixed';
+    contenedor.style.bottom = '0';
+    contenedor.style.left = '0';
+    contenedor.style.width = '100%';
+    contenedor.style.zIndex = '1000';  // Asegura que esté sobre otros elementos
+});
